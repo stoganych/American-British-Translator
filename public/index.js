@@ -18,6 +18,7 @@ const translateHandler = async () => {
   });
 
   const parsed = await data.json();
+  console.log(parsed.translation)
   if (parsed.error) {
     errorArea.innerText = JSON.stringify(parsed);
     return;
